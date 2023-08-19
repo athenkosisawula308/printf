@@ -1,3 +1,5 @@
+#include "main.h"
+
 /************************* PRINT REVERSE *************************/
 /**
  * print_reverse - Prints reverse string.
