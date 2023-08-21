@@ -19,24 +19,24 @@
 #define S_SHORT 1
 
 /**
- *  * struct fmt - Struct op
- *   *
- *    * @fmt: The format.
- *     * @fn: The function associated.
- *      */
+ * struct fmt - Struct op
+ *
+ * @fmt: The format.
+ * @fn: The function associated.
+ */
 struct fmt
 {
-		char fmt;
-			int (*fn)(va_list, char[], int, int, int, int);
+	char fmt;
+	int (*fn)(va_list, char[], int, int, int, int);
 };
 
 
 /**
- *  * typedef struct fmt fmt_t - Struct op
- *   *
- *    * @fmt: The format.
- *     * @fm_t: The function associated.
- *      */
+ * typedef struct fmt fmt_t - Struct op
+ *
+ * @fmt: The format.
+ * @fm_t: The function associated.
+ */
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
@@ -110,7 +110,6 @@ int write_unsgnd(int is_negative, int ind,
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
-
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
